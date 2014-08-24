@@ -1,0 +1,6 @@
+%_topdir %(pwd)
+<% if node[:platform_version].to_f >= 6 then %>
+%_source_filedigest_algorithm md5
+%_binary_filedigest_algorithm md5
+<% end %>
+%dist %{nil}
