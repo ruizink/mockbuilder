@@ -66,6 +66,7 @@ end
 %w{
   el5-x86_64.cfg
   el6-x86_64.cfg
+  el7-x86_64.cfg
 }.each do |f|
   cookbook_file f do
     path "/etc/mock/#{f}"
