@@ -23,7 +23,7 @@ Vagrant.configure("2") do |config|
     chef.verbose_logging = false
     chef.custom_config_path = "Vagrantfile.chef"
 
-    chef.cookbooks_path   = "chef/cookbooks"
+    chef.cookbooks_path   = "cookbooks"
 
     chef.add_recipe "mockbuilder"
 
