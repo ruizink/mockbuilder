@@ -60,17 +60,14 @@ end
 end
 
 # Deploy mock configs
-%w{
-  el5-x86_64.cfg
-  el6-x86_64.cfg
-  el7-x86_64.cfg
-}.each do |f|
-  cookbook_file f do
-    path "/etc/mock/#{f}"
-    action :create
-    owner "vagrant"
-    group "mock"
-    mode "0644"
-    backup false
-  end
+remote_directory "/etc/mock/" do
+  source "etc_mock"
+  files_backup 1
+  files_owner "root"
+  files_group "mock"
+  files_mode "0644"
+  recursive true
+  purge true
+  cookbook "mockbuilder"
 end
+
