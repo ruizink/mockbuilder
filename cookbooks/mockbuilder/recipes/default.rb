@@ -15,13 +15,15 @@ end
 
 # Create mock group
 group "mock" do
+  append true
+  members "vagrant"
 	action :create
 end
 
-user "vagrant" do
-    gid "mock"
-    action :modify
-end
+#user "vagrant" do
+#    gid "mock"
+#    action :modify
+#end
 
 # Create a clean build environment
 %w{
