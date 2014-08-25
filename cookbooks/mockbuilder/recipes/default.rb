@@ -20,6 +20,20 @@ group "mock" do
 	action :create
 end
 
+# Install required packages
+%w{
+  mock
+  rpm-build
+  redhat-rpm-config
+  vim-enhanced
+  wget
+  git
+}.each do |p|
+	package p do
+		action :install
+	end
+end
+
 # Create a clean build environment
 %w{
   /home/vagrant/packages
@@ -44,20 +58,6 @@ template "/home/vagrant/.rpmmacros" do
 	group "mock"
 	mode "0644"
   backup false
-end
-
-# Install required packages
-%w{
-  mock
-  rpm-build
-  redhat-rpm-config
-  vim-enhanced
-  wget
-  git
-}.each do |p|
-	package p do
-		action :install
-	end
 end
 
 # Deploy mock configs
