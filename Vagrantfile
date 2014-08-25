@@ -4,7 +4,8 @@
 Vagrant.configure("2") do |config|
 
   # Base box
-  config.vm.box = "centos6-minimal-x86_64.box"
+  config.vm.box = "centos65-minimal-x86_64"
+  config.vm.box_url = "https://dl.dropboxusercontent.com/s/o8eorprrih1zt22/centos65-minimal-x86_64.box"
 
   # Install chef with omnibus
   config.omnibus.chef_version = "latest"
