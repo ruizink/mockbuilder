@@ -52,6 +52,7 @@ end
   rpm-build
   redhat-rpm-config
   vim-enhanced
+  wget
   git
 }.each do |p|
 	package p do
