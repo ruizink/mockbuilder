@@ -1,6 +1,6 @@
 # Mockbuilder
 
-Mockbuilder is a tool that allows you to instanciate a virtual machine pre-configured with a working Mock environment.
+Mockbuilder allows you to instanciate a virtual machine pre-configured with a working Mock environment.
 
 It uses Vagrant and Chef to create and provision a virtual machine.
 
