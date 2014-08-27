@@ -43,7 +43,7 @@ You want to make sure you have these components installed on your local machine:
 
 ## what can you with it ?
 
-I assume that you're familiar with the rpmbuild process already know what Mock is. (Scroll to the top in case you've missed it)
+I assume that you're already familiar with the rpmbuild process and you know what Mock is. (Scroll to the top in case you've missed it)
 
 To get things going you'll need at least 2 things with you:
 
