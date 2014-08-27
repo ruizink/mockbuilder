@@ -2,11 +2,15 @@
 
 Mockbuilder is a tool that allows you to instanciate a virtual machine pre-configured with a working Mock environment.
 
-It uses vagrant and chef to create and provision a virtual machine.
+It uses Vagrant and Chef to create and provision a virtual machine.
 
 In a nutshell, Mock allows you to build RPM packages targetted to a different distribution than the one where your building the RPMs. It does this by jailing rpmbuild environments with chroot.
 
-If you want to know more details on what Mock is, and how it works, you may want to check this out: [Mock Project](http://fedoraproject.org/wiki/Projects/Mock)
+If you want to know more details on Vagrant, Chef or Mock, you may want to check these out:
+
+- [Vagrant](https://docs.vagrantup.com/v2/getting-started/index.html)
+- [Chef](http://www.getchef.com/chef/)
+- [Mock Project](http://fedoraproject.org/wiki/Projects/Mock)
 
 ## usage
 
@@ -33,9 +37,9 @@ $ vagrant ssh
 
 You want to make sure you have these components installed on your local machine:
 
-- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-- [vagrant](https://www.vagrantup.com/downloads.html)
-- [Git](http://git-scm.com/downloads)
+- [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+- [Download Vagrant](https://www.vagrantup.com/downloads.html)
+- [Download Git](http://git-scm.com/downloads)
 
 ## what can you with it ?
 
