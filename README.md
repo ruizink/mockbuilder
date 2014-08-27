@@ -63,7 +63,7 @@ $ cd packages/<mypackage>
 $ rpmbuild -bs SPECS/<mypackage>.spec
 ```
 
-##### 3. Generate _mypakcage_ RPM for the distribution that I need
+##### 3. Generate _mypackage_ RPM for the distribution that I need
 
 ```
 $ mock -r <dist> SRPMS/<mypackage>-<version>-<release>.src.rpm
