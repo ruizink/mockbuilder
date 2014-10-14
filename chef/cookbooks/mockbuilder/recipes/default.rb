@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: mock
+# Cookbook Name:: mockbuilder
 # Recipe:: default
 #
 
