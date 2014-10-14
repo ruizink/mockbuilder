@@ -14,6 +14,14 @@ If you want to know more details on Vagrant, Chef or Mock, you may want to check
 
 ## usage
 
+##### 0. Prerequisites
+
+You're going to need Berkshelf, so please install the [Chef Development Kit](https://downloads.getchef.com/chef-dk)
+
+Also, you'll need to install the vagrant-berkshelf plugin:
+```
+$ vagrant plugin install vagrant-berkshelf
+```
 ##### 1. First things first... fetch the code
 
 ```

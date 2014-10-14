@@ -17,16 +17,18 @@ Vagrant.configure("2") do |config|
     vb.customize ["modifyvm", :id, "--memory", 1024]
   end
 
+  # Make sure ot have vagrant-berkshelf installed before enabling it
+  if Vagrant.has_plugin?("vagrant-berkshelf")
+    config.berkshelf.enabled = true
+  else
+    error = "The vagrant-berkshelf plugin is not installed! Try running:\nvagrant plugin install vagrant-berkshelf"
+    raise Exception, error
+  end
+
   config.vm.provision :chef_solo do |chef|
-
     # Chef config
-    chef.log_level = :debug
-    chef.verbose_logging = false
-    chef.custom_config_path = "Vagrantfile.chef"
-
-    chef.cookbooks_path   = "cookbooks"
-
+    chef.custom_config_path = ".Vagrantfile.chef"
+    chef.cookbooks_path   = "chef/cookbooks"
     chef.add_recipe "mockbuilder"
-
   end
 end
