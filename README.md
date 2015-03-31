@@ -49,7 +49,7 @@ You want to make sure you have these components installed on your local machine:
 - [Download Vagrant](https://www.vagrantup.com/downloads.html)
 - [Download Git](http://git-scm.com/downloads)
 
-## what can you with it ?
+## what can you do with it ?
 
 I assume that you're already familiar with the rpmbuild process and you know what Mock is. (Scroll to the top in case you've missed it)
 
