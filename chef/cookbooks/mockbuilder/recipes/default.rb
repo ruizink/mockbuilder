@@ -63,7 +63,7 @@ end
 # Deploy mock configs
 remote_directory "/etc/mock/" do
   source "etc_mock"
-  files_backup 1
+  files_backup 0
   files_owner "root"
   files_group "mock"
   files_mode "0644"
