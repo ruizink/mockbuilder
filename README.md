@@ -1,10 +1,10 @@
 # Mockbuilder
 
-Mockbuilder allows you to instanciate a virtual machine pre-configured with a working Mock environment.
+Mockbuilder allows you to instantiate a virtual machine pre-configured with a working Mock environment.
 
 It uses Vagrant and Chef to create and provision a virtual machine.
 
-In a nutshell, Mock allows you to build RPM packages targetted to a different distribution than the one where your building the RPMs. It does this by jailing rpmbuild environments with chroot.
+In a nutshell, Mock allows you to build RPM packages targeted to a different distribution than the one where your building the RPMs. It does this by jailing rpmbuild environments with chroot.
 
 If you want to know more details on Vagrant, Chef or Mock, you may want to check these out:
 
@@ -12,11 +12,20 @@ If you want to know more details on Vagrant, Chef or Mock, you may want to check
 - [Chef](http://www.getchef.com/chef/)
 - [Mock Project](http://fedoraproject.org/wiki/Projects/Mock)
 
+## requirements
+
+You want to make sure you have these components installed on your local machine:
+
+- [Chef Development Kit](https://downloads.getchef.com/chef-dk)
+- [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+- [Download Vagrant](https://www.vagrantup.com/downloads.html)
+- [Download Git](http://git-scm.com/downloads)
+
 ## usage
 
 ##### 0. Prerequisites
 
-You're going to need Berkshelf, so please install the [Chef Development Kit](https://downloads.getchef.com/chef-dk)
+You're going to need Berkshelf, available on [Chef Development Kit](https://downloads.getchef.com/chef-dk)
 
 Also, you'll need to install the vagrant-berkshelf plugin:
 ```
@@ -40,14 +49,6 @@ $ vagrant up
 ```
 $ vagrant ssh
 ```
-
-## requirements
-
-You want to make sure you have these components installed on your local machine:
-
-- [Download VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-- [Download Vagrant](https://www.vagrantup.com/downloads.html)
-- [Download Git](http://git-scm.com/downloads)
 
 ## what can you do with it ?
 
