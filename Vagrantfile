@@ -1,6 +1,17 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# Autoinstall vagrant plugins
+[
+  'vagrant-berkshelf',
+  'vagrant-omnibus'
+].each do |p|
+  unless Vagrant.has_plugin?(p)
+    system("vagrant plugin install #{p}") || exit!
+    exit system('vagrant', *ARGV)
+  end
+end
+
 Vagrant.configure("2") do |config|
 
   # Base box
